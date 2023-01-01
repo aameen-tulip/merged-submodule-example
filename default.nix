@@ -14,7 +14,6 @@
 
   text = ( lib.generators.toPretty {} ( lib.evalModules {
     modules = [
-
       ( { lib, config, options, specialArgs, ... } @ args: {
         options.foo = lib.mkOption { type = lib.types.int; default = 0; };
         options.bar = lib.mkOption {
@@ -39,7 +38,6 @@
           };
         };
       } )
-
 
       ( { lib, config, options, specialArgs, ... } @ args: {
         config = {
